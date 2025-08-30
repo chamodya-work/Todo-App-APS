@@ -1,0 +1,3 @@
+# API Configuration
+# Create .env file and add below lines
+VITE_MOCKAPI_BASE_URL=your_mockapi_base_url_here

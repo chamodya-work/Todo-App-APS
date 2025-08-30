@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #8D2DE1 50%, #472DAD 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #29294A;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 20px;
+  
+}
+.form-row {
+  display: flex;
+  gap: 2rem;          
+  align-items: center;  
+
+}
+
+
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: #324154;
+  border: 1px solid #6c637f;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 400px;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #f1e4e4bd;
+}
+
+.todo-btn {
+  background: #8732D8;
+  color: #fff;
+  border: none;
+  border-radius:5px ;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8732D8;
+  color: #fff;
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+
+.error {
+  color: #ff6b6b;
+  margin: -1.5rem 0 1rem 0;
+  font-size: 0.875rem;
+}
+
+.loading {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Media query for mobile responsiveness (screens <= 600px) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px; 
+  }
+
+  .TodoWrapper {
+    margin-top: 2rem; 
+    padding: 1.5rem; 
+    border-radius: 15px; 
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 1rem; 
+    align-items: stretch; 
+  }
+
+  .TodoForm {
+    margin-bottom: 0.5rem;
+  }
+
+  .todo-input {
+    width: 100%;
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+  }
+
+  .todo-btn {
+    width: 100%; 
+    padding: 0.55rem 1rem; 
+
+  .Todo {
+    padding: 1rem; 
+    border-radius: 5px; 
+  }
+
+  h1 {
+    font-size: 1.5rem; 
+  }
+}
+}
